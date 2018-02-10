@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350.0" prefWidth="500.0"
+	style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+	<children>
+		<Button fx:id="play" layoutX="191.0" layoutY="52.0"
+			mnemonicParsing="false" onAction="#play" prefHeight="51.0" prefWidth="125.0"
+			style="-fx-background-color: black;" text="Play" textAlignment="CENTER"
+			textFill="#d9ff7b">
+			<font>
+				<Font name="Calibri Light" size="25.0" />
+			</font>
+		</Button>
+		<TextField fx:id="frequency" layoutX="188.0" layoutY="162.0"
+			prefHeight="38.0" prefWidth="125.0" style="-fx-background-color: d9ff7b;" />
+		<TextField fx:id="time" layoutX="188.0" layoutY="257.0"
+			prefHeight="38.0" prefWidth="125.0" style="-fx-background-color: d9ff7b;" />
+		<Text layoutX="34.0" layoutY="188.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="Frequency (Hz)" wrappingWidth="125.0">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Text>
+		<Text layoutX="63.0" layoutY="283.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="Time (s)" wrappingWidth="68.0">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Text>
+	</children>
+</AnchorPane>
