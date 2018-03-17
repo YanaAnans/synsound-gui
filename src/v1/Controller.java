@@ -1,5 +1,5 @@
+package v1;
 
-//import java.awt.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -18,21 +18,19 @@ public class Controller implements Initializable {
 	private Button play;
 
 	@FXML
-	private TextField frequency;
-
-	@FXML
-	private TextField time;
+	private TextField text;
 
 	public void play(ActionEvent event) {
-		String f = frequency.getText();
-		String t = time.getText();
-		AudioPlayer.play(AudioLibrary.note(Double.parseDouble(t), Double.parseDouble(f)));
+		AudioPlayer player = new AudioPlayer();
+		String phoneme = text.getText();
+		// 1 call phonems(String phonemsSequence)
+		// 2 call audio editor uninon method
+		player.play(AudioLibrary.phoneme(phoneme));
 	}
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		frequency.setText("440.0");
-		time.setText("2");
+
 	}
 
 }

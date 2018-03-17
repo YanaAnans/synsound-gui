@@ -8,7 +8,7 @@
 
 <AnchorPane prefHeight="350.0" prefWidth="500.0"
 	style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8"
-	xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="v0.Controller">
 	<children>
 		<Button fx:id="play" layoutX="191.0" layoutY="52.0"
 			mnemonicParsing="false" onAction="#play" prefHeight="51.0" prefWidth="125.0"

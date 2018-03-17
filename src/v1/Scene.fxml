@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350.0" prefWidth="500.0"
+	style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="v1.Controller">
+	<children>
+		<Button fx:id="play" layoutX="188.0" layoutY="249.0"
+			mnemonicParsing="false" onAction="#play" prefHeight="51.0" prefWidth="125.0"
+			style="-fx-background-color: black;" text="Play" textAlignment="CENTER"
+			textFill="#d9ff7b">
+			<font>
+				<Font name="Calibri Light" size="25.0" />
+			</font>
+		</Button>
+		<TextField fx:id="text" layoutX="65.0" layoutY="128.0"
+			prefHeight="74.0" prefWidth="375.0" style="-fx-background-color: d9ff7b;" />
+		<Text layoutX="164.0" layoutY="80.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="Write phonemes" wrappingWidth="178.0">
+			<font>
+				<Font name="Calibri Light" size="24.0" />
+			</font>
+		</Text>
+	</children>
+</AnchorPane>

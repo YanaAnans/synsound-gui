@@ -1,3 +1,4 @@
+package v0;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +14,7 @@ public class Main extends Application {
 			Parent root = FXMLLoader.load(getClass().getResource("Scene.fxml"));
 			Scene scene = new Scene(root);
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("Synsound v.1.0");
+			primaryStage.setTitle("Synsound v.0.0");
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
