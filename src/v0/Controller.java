@@ -24,10 +24,9 @@ public class Controller implements Initializable {
 	private TextField time;
 
 	public void play(ActionEvent event) {
-		AudioPlayer player = new AudioPlayer();
 		String f = frequency.getText();
 		String t = time.getText();
-		player.play(AudioLibrary.note(Double.parseDouble(t), Double.parseDouble(f)));
+		AudioPlayer.play(AudioLibrary.note(Double.parseDouble(t), Double.parseDouble(f)));
 	}
 
 	@Override
