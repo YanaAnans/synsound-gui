@@ -28,7 +28,7 @@ public class Controller implements Initializable {
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		text.setText("-v la d'i m'i ir- pu t'i in- -ma la d'e ec-");
+		text.setText("-v la d'i m'i ir- -pu t'i in- -ma la d'e ec-");
 	}
 
 }
