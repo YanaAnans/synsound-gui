@@ -11,7 +11,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.TextArea;
 
 public class Controller implements Initializable {
 
@@ -19,16 +20,19 @@ public class Controller implements Initializable {
 	private Button play;
 
 	@FXML
-	private TextField text;
+	private TextArea text;
+
+	@FXML
+	private ChoiceBox<String> examples;
 
 	public void play(ActionEvent event) {
-		String phoneme = text.getText();
-		AudioPlayer.play(AudioEditor.union(AudioLibrary.phonemes(phoneme)));
+		String phonemes = text.getText();
+		AudioPlayer.play(AudioEditor.union(AudioLibrary.phonemes(phonemes)));
 	}
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		text.setText("-v la d'i m'i ir- -pu t'i in- -ma la d'e ec-");
+		text.setText("-p r'i v'e et- -m'i ir-");
 	}
 
 }

@@ -1,30 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="350.0" prefWidth="500.0"
-	style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8"
-	xmlns:fx="http://javafx.com/fxml/1" fx:controller="v1.Controller">
+<AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="v1.Controller">
 	<children>
-		<Button fx:id="play" layoutX="188.0" layoutY="249.0"
-			mnemonicParsing="false" onAction="#play" prefHeight="51.0" prefWidth="125.0"
-			style="-fx-background-color: black;" text="Play" textAlignment="CENTER"
-			textFill="#d9ff7b">
-			<font>
-				<Font name="Calibri Light" size="25.0" />
-			</font>
-		</Button>
-		<TextField fx:id="text" layoutX="65.0" layoutY="128.0"
-			prefHeight="74.0" prefWidth="375.0" style="-fx-background-color: d9ff7b;" />
-		<Text layoutX="164.0" layoutY="80.0" strokeType="OUTSIDE"
-			strokeWidth="0.0" text="Write phonemes" wrappingWidth="178.0">
-			<font>
-				<Font name="Calibri Light" size="24.0" />
-			</font>
-		</Text>
+		<MenuBar prefHeight="49.0" prefWidth="243.0">
+			<menus>
+				<Menu mnemonicParsing="false" style="-fx-font-color: #dbff98;" text="File">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Close" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Edit">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Delete" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="View">
+					<items>
+						<MenuItem mnemonicParsing="false" text="About" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<MenuButton fx:id="voiceChange" layoutX="731.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="243.0" text="Voice">
+			<items>
+				<MenuItem mnemonicParsing="false" text="Action 1" />
+				<MenuItem mnemonicParsing="false" text="Action 2" />
+			</items>
+		</MenuButton>
+		<TextArea fx:id="text" layoutY="55.0" prefHeight="485.0" prefWidth="974.0" />
+		<Button fx:id="play" layoutX="243.0" layoutY="-1.0" mnemonicParsing="false" onAction="#play" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: black;" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/play.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+		<Button fx:id="pause" layoutX="304.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="42.0" style="-fx-background-color: black;" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/pause.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="stop" layoutX="365.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: black;" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/stop.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="repeat" layoutX="426.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: black;" textAlignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/repeat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="textToTranscription" layoutX="507.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="199.0" style="-fx-background-color: black;" text="Text ↔ Transcription" textAlignment="CENTER" textFill="#d0ff8a" />
 	</children>
 </AnchorPane>
