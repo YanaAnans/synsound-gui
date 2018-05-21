@@ -10,66 +10,25 @@
 
 <AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="v1.Controller">
 	<children>
-		<MenuBar prefHeight="49.0" prefWidth="243.0">
-			<menus>
-				<Menu mnemonicParsing="false" style="-fx-font-color: #dbff98;" text="File">
-					<items>
-						<MenuItem mnemonicParsing="false" text="Close" />
-					</items>
-				</Menu>
-				<Menu mnemonicParsing="false" text="Edit">
-					<items>
-						<MenuItem mnemonicParsing="false" text="Delete" />
-					</items>
-				</Menu>
-				<Menu mnemonicParsing="false" text="View">
-					<items>
-						<MenuItem mnemonicParsing="false" text="About" />
-					</items>
-				</Menu>
-			</menus>
-		</MenuBar>
-		<MenuButton fx:id="voiceChange" layoutX="731.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="243.0" text="Voice">
-			<items>
-				<MenuItem mnemonicParsing="false" text="Action 1" />
-				<MenuItem mnemonicParsing="false" text="Action 2" />
-			</items>
-		</MenuButton>
-		<TextArea fx:id="text" layoutY="55.0" prefHeight="485.0" prefWidth="974.0" />
-		<Button fx:id="play" layoutX="243.0" layoutY="-1.0" mnemonicParsing="false" onAction="#play" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: black;" textAlignment="CENTER">
+		<TextArea fx:id="text" layoutX="83.0" layoutY="81.0" prefHeight="147.0" prefWidth="797.0" />
+		<Button fx:id="play" layoutX="449.0" layoutY="474.0" mnemonicParsing="false" onAction="#play" prefHeight="45.0" prefWidth="61.0" style="-fx-background-color: black;" textAlignment="CENTER">
          <graphic>
-            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="52.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../resources/play.png" />
                </image>
             </ImageView>
          </graphic></Button>
-		<Button fx:id="pause" layoutX="304.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="42.0" style="-fx-background-color: black;" textAlignment="CENTER">
-         <graphic>
-            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../resources/pause.png" />
-               </image>
-            </ImageView>
-         </graphic></Button>
-      <Button fx:id="stop" layoutX="365.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: black;" textAlignment="CENTER">
-         <graphic>
-            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../resources/stop.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button fx:id="repeat" layoutX="426.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="42.0" style="-fx-background-color: black;" textAlignment="CENTER">
-         <graphic>
-            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../resources/repeat.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
-      <Button fx:id="textToTranscription" layoutX="507.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="199.0" style="-fx-background-color: black;" text="Text ↔ Transcription" textAlignment="CENTER" textFill="#d0ff8a" />
+      <Text fill="#daffa1" layoutX="453.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Текст">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="samples" layoutX="83.0" layoutY="308.0" prefHeight="147.0" prefWidth="797.0" />
+      <Text fill="#daffa1" layoutX="437.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сэмплы">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
 	</children>
 </AnchorPane>
