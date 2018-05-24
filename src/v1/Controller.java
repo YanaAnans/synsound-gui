@@ -13,8 +13,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
 public class Controller implements Initializable {
 
@@ -28,20 +28,22 @@ public class Controller implements Initializable {
 	private TextArea samples;
 
 	@FXML
-	private ChoiceBox<String> examples;
+	private TextField vowel;
 
 	public void play(ActionEvent event) {
+		double vowelDur = Double.parseDouble(vowel.getText());
 		TextTransformer tt = new TextTransformer();
 		String cyrillicText = text.getText();
 		cyrillicText = Hyphenator.textToSamples(cyrillicText);
 		cyrillicText = tt.transform(cyrillicText);
 		samples.setText(cyrillicText);
-		AudioPlayer.play(AudioEditor.union(AudioLibrary.phonemes(cyrillicText)));
+		AudioPlayer.play(AudioEditor.union(AudioLibrary.phonemes(cyrillicText, vowelDur)));
 	}
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		text.setText("Привет мир");
+		vowel.setText("100");
 	}
 
 }

@@ -10,8 +10,8 @@
 
 <AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="v1.Controller">
 	<children>
-		<TextArea fx:id="text" layoutX="83.0" layoutY="81.0" prefHeight="147.0" prefWidth="797.0" />
-		<Button fx:id="play" layoutX="449.0" layoutY="474.0" mnemonicParsing="false" onAction="#play" prefHeight="45.0" prefWidth="61.0" style="-fx-background-color: black;" textAlignment="CENTER">
+		<TextArea fx:id="text" layoutX="74.0" layoutY="109.0" prefHeight="147.0" prefWidth="797.0" />
+		<Button fx:id="play" layoutX="530.0" layoutY="24.0" mnemonicParsing="false" onAction="#play" prefHeight="45.0" prefWidth="61.0" style="-fx-background-color: black;" textAlignment="CENTER">
          <graphic>
             <ImageView fitHeight="52.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -19,13 +19,19 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Text fill="#daffa1" layoutX="453.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Текст">
+      <Text fill="#daffa1" layoutX="884.0" layoutY="192.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Текст">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <TextArea fx:id="samples" layoutX="83.0" layoutY="308.0" prefHeight="147.0" prefWidth="797.0" />
-      <Text fill="#daffa1" layoutX="437.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сэмплы">
+      <TextArea fx:id="samples" layoutX="74.0" layoutY="324.0" prefHeight="147.0" prefWidth="797.0" />
+      <Text fill="#daffa1" layoutX="870.0" layoutY="407.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сэмплы">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="vowel" layoutX="448.0" layoutY="29.0" prefHeight="42.0" prefWidth="65.0" />
+      <Text fill="#daffa1" layoutX="93.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Длительность гласной (0-250)">
          <font>
             <Font size="24.0" />
          </font>
