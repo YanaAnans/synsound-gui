@@ -13,7 +13,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class Controller implements Initializable {
@@ -22,10 +21,10 @@ public class Controller implements Initializable {
 	private Button play;
 
 	@FXML
-	private TextArea text;
+	private TextField text;
 
 	@FXML
-	private TextArea samples;
+	private TextField samples;
 
 	@FXML
 	private TextField vowel;

@@ -8,33 +8,29 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="v1.Controller">
+<AnchorPane prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="v1.Controller">
 	<children>
-		<TextArea fx:id="text" layoutX="74.0" layoutY="109.0" prefHeight="147.0" prefWidth="797.0" />
-		<Button fx:id="play" layoutX="530.0" layoutY="24.0" mnemonicParsing="false" onAction="#play" prefHeight="45.0" prefWidth="61.0" style="-fx-background-color: black;" textAlignment="CENTER">
-         <graphic>
-            <ImageView fitHeight="52.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../resources/play.png" />
-               </image>
-            </ImageView>
-         </graphic></Button>
-      <Text fill="#daffa1" layoutX="884.0" layoutY="192.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Текст">
+		<Button fx:id="play" layoutX="301.0" layoutY="113.0" mnemonicParsing="false" onAction="#play" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: white;" text="Play" textAlignment="CENTER" textFill="#434343">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Text fill="#daffa1" layoutX="226.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Текст">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <TextArea fx:id="samples" layoutX="74.0" layoutY="324.0" prefHeight="147.0" prefWidth="797.0" />
-      <Text fill="#daffa1" layoutX="870.0" layoutY="407.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сэмплы">
+      <Text fill="#daffa1" layoutX="209.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дифоны">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
-      <TextField fx:id="vowel" layoutX="448.0" layoutY="29.0" prefHeight="42.0" prefWidth="65.0" />
-      <Text fill="#daffa1" layoutX="93.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Длительность гласной (0-250)">
+      <TextField fx:id="vowel" layoutX="129.0" layoutY="113.0" prefHeight="50.0" prefWidth="80.0" />
+      <Text fill="#daffa1" layoutX="86.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Длительность гласной (0-250)">
          <font>
             <Font size="24.0" />
          </font>
       </Text>
+      <TextField fx:id="text" layoutX="25.0" layoutY="282.0" prefHeight="50.0" prefWidth="450.0" />
+      <TextField fx:id="samples" layoutX="25.0" layoutY="424.0" prefHeight="50.0" prefWidth="450.0" />
 	</children>
 </AnchorPane>

@@ -6,32 +6,23 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="350.0" prefWidth="500.0"
-	style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8"
-	xmlns:fx="http://javafx.com/fxml/1" fx:controller="v0.Controller">
+<AnchorPane prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="v0.Controller">
 	<children>
-		<Button fx:id="play" layoutX="191.0" layoutY="52.0"
-			mnemonicParsing="false" onAction="#play" prefHeight="51.0" prefWidth="125.0"
-			style="-fx-background-color: black;" text="Play" textAlignment="CENTER"
-			textFill="#d9ff7b">
+		<Button fx:id="play" layoutX="128.0" layoutY="26.0" mnemonicParsing="false" onAction="#play" prefHeight="51.0" prefWidth="96.0" style="-fx-background-color: white;" text="Play" textAlignment="CENTER" textFill="#323232">
 			<font>
-				<Font name="Calibri Light" size="25.0" />
+				<Font size="24.0" />
 			</font>
 		</Button>
-		<TextField fx:id="frequency" layoutX="188.0" layoutY="162.0"
-			prefHeight="38.0" prefWidth="125.0" style="-fx-background-color: d9ff7b;" />
-		<TextField fx:id="time" layoutX="188.0" layoutY="257.0"
-			prefHeight="38.0" prefWidth="125.0" style="-fx-background-color: d9ff7b;" />
-		<Text layoutX="34.0" layoutY="188.0" strokeType="OUTSIDE"
-			strokeWidth="0.0" text="Frequency (Hz)" wrappingWidth="125.0">
+		<TextField fx:id="frequency" layoutX="96.0" layoutY="150.0" prefHeight="51.0" prefWidth="161.0" />
+		<TextField fx:id="time" layoutX="96.0" layoutY="271.0" prefHeight="51.0" prefWidth="161.0" />
+		<Text fill="#daffa1" layoutX="95.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frequency (Hz)" wrappingWidth="161.0">
 			<font>
-				<Font size="18.0" />
+				<Font size="24.0" />
 			</font>
 		</Text>
-		<Text layoutX="63.0" layoutY="283.0" strokeType="OUTSIDE"
-			strokeWidth="0.0" text="Time (s)" wrappingWidth="68.0">
+		<Text fill="#daffa1" layoutX="133.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time (s)" wrappingWidth="85.0">
 			<font>
-				<Font size="18.0" />
+				<Font size="24.0" />
 			</font>
 		</Text>
 	</children>
